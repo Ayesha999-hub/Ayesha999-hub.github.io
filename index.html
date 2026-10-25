@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of Ayesha Suleman, BS Data Science graduate and data analyst.">
+<title>Ayesha Suleman Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single left-aligned column, name and links on top, then plain sections with project entries separated by thin rules. */
+:root{
+  --bg:#F7F9FB;
+  --fg:#1B2A49;
+  --muted:#4F5D75;
+  --accent:#1F8A8A;
+  --rule:#D6DEE7;
+  --chip:#E4EEF0;
+  --font-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --font-body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A2E;--fg:#E8EEF6;--muted:#A7B4C8;--accent:#4FC3C3;--rule:#26354F;--chip:#1A2B45;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1A2E;--fg:#E8EEF6;--muted:#A7B4C8;--accent:#4FC3C3;--rule:#26354F;--chip:#1A2B45;color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:var(--font-body);font-size:16px;line-height:1.6;
+  padding-block:48px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+main{max-width:720px;margin:0 auto;min-width:0}
+header{padding-bottom:28px;border-bottom:1px solid var(--rule)}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.1rem,6vw,3rem);line-height:1.1;margin:0 0 8px;text-wrap:balance;letter-spacing:-0.01em}
+.role{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--accent);margin:0 0 16px}
+.intro{margin:0 0 20px;color:var(--muted);max-width:62ch}
+.links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.95rem}
+.links span,.links a{color:var(--fg)}
+.links a{text-decoration-color:var(--accent);text-underline-offset:3px}
+.links a:hover{color:var(--accent)}
+.links a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section{padding-top:32px}
+h2{font-family:var(--font-mono);font-weight:500;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.skills{display:grid;grid-template-columns:170px 1fr;gap:10px 20px;margin:0}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted);min-width:0}
+.project{padding:16px 0;border-top:1px solid var(--rule)}
+.project:first-of-type{border-top:0;padding-top:0}
+h3{font-family:var(--font-display);font-size:1.12rem;font-weight:600;margin:0 0 6px;text-wrap:balance}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px;padding:0;list-style:none}
+.tags li{font-family:var(--font-mono);font-size:.72rem;background:var(--chip);color:var(--fg);padding:2px 8px;border-radius:3px}
+.project p,.item p{margin:0;color:var(--muted);max-width:64ch}
+.project ul{margin:0;padding-left:1.1em;color:var(--muted);max-width:64ch}
+.project li+li{margin-top:4px}
+.item{padding:0 0 12px}
+.item strong{color:var(--fg)}
+.meta{font-family:var(--font-mono);font-size:.8rem;color:var(--muted)}
+footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+@media (max-width:560px){
+  .skills{grid-template-columns:1fr;gap:2px}
+  .skills dd{margin-bottom:10px}
+  body{padding-block:32px 48px}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ayesha Suleman</h1>
+    <p class="role">Data Analyst &middot; BS Data Science, FAST-NUCES Islamabad</p>
+    <p class="intro">I turn raw data into clear findings. I work mostly in SQL and Python, and I have built data warehouses, analytics pipelines and dashboards. I also take on freelance analytics projects for clients on Fiverr. I am looking for a remote Data Analyst role.</p>
+    <div class="links">
+      <a href="https://github.com/Ayesha999-hub" target="_blank" rel="noopener">GitHub: Ayesha999-hub</a>
+      <a href="https://www.fiverr.com/ayesha_suleman9" target="_blank" rel="noopener">Fiverr: ayesha_suleman9</a>
+      <span>ayeshasuleman200@gmail.com</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Data analysis</dt><dd>SQL, MySQL, Python (Pandas, NumPy), EDA, data cleaning, KPI reporting, anomaly detection</dd>
+      <dt>Visualization</dt><dd>Matplotlib, Seaborn, React analytics dashboard, t-SNE</dd>
+      <dt>Data warehousing</dt><dd>Star schema, ETL pipelines, OLAP cubes</dd>
+      <dt>Machine learning</dt><dd>Scikit-learn, TensorFlow, XGBoost, feature engineering, PCA, clustering</dd>
+      <dt>Tools</dt><dd>Git, GitHub, Jupyter Notebook, MLflow, FastAPI</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>Walmart Near-Real-Time Data Warehouse</h3>
+      <ul class="tags"><li>Python</li><li>MySQL</li><li>SQL</li></ul>
+      <ul>
+        <li>Built a star-schema warehouse with a full ETL pipeline and a HYBRIDJOIN stream-relation algorithm.</li>
+        <li>Wrote OLAP queries that produce KPI reports for business analysis.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>Patient Intelligence Pipeline</h3>
+      <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>FAISS</li></ul>
+      <p>Time-series analysis and Isolation Forest anomaly detection on simulated healthcare records. It cut false-positive flags by about 30% compared with simple thresholds.</p>
+    </article>
+
+    <article class="project">
+      <h3>Heart Disease Analysis Pipeline</h3>
+      <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Matplotlib</li></ul>
+      <p>Cleaned and explored the Cleveland Heart Disease dataset, then compared Random Forest, XGBoost and SVM models. The best model reached an AUC-ROC above 0.92.</p>
+    </article>
+
+    <article class="project">
+      <h3>AI Outbound Calling and Lead Engagement System</h3>
+      <ul class="tags"><li>Python</li><li>FastAPI</li><li>React</li><li>OpenAI</li><li>Twilio</li></ul>
+      <p>Final year project. A full-stack platform for automated outbound calls with a real-time analytics dashboard that tracks call workflows and lead engagement.</p>
+    </article>
+
+    <article class="project">
+      <h3>Bias in Content Moderation</h3>
+      <ul class="tags"><li>Python</li><li>Scikit-learn</li></ul>
+      <p>A fairness audit of NLP moderation models. It measures demographic bias with equalized odds and demographic parity and proposes ways to reduce it.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <div class="item"><p><strong>Insider-threat detection in data warehouses.</strong> Co-authored a paper on a hybrid Autoencoder and Siamese Network model (TensorFlow, Keras).</p></div>
+    <div class="item"><p><strong>Deep Support Vectors.</strong> Co-authored a paper extending the framework with KKT validation, entropy analysis and t-SNE visualization.</p></div>
+  </section>
+
+  <section>
+    <h2>Experience and education</h2>
+    <div class="item"><p><strong>Freelance Data Analyst, Fiverr.</strong> <span class="meta">2025 to present</span><br>Analytics and visualization projects for independent clients, including scoping, delivery and revisions on fixed deadlines.</p></div>
+    <div class="item"><p><strong>BS Data Science, FAST-NUCES Islamabad.</strong> <span class="meta">2026</span></p></div>
+  </section>
+
+  <footer>Contact: ayeshasuleman200@gmail.com &middot; Islamabad, Pakistan &middot; Open to remote work</footer>
+</main>
+</body>
+</html>
